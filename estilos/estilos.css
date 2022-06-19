@@ -1,0 +1,143 @@
+/* ============ ESTILOS PARA LA PÁGINA DE INICIO ============ */
+body.pag-inicio{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/home.jpg");
+    background-size: cover;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*
+    Para todos los BODYs menos el de la página de Inicio,
+    para poder usar la clase fixed-top de Bootstrap.
+*/
+body.desplazamiento-inferior{
+    padding-top: 250px;
+}
+
+
+/* ============ ESTILOS PARA LA CABECERA ============ */
+div>img.logo{
+    width: 100px;
+}
+
+.cabecera{
+    background-color: lightgray;
+}
+
+nav{
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    padding: 4px 4px;
+}
+
+a.btn-portafolio{
+    width: 175px;
+}
+
+nav>a{
+    color: black;
+    padding-left: 8px;;
+}
+
+nav>a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid darkgray;
+}
+
+
+/* ============ ESTILOS PARA LA PÁGINA DE CURRICULUM ============ */
+img.foto{
+    border-radius: 25px 0px 25px 0px;
+    width: 225px;
+}
+
+a.descarga{
+    border-radius: 20px !important;
+}
+
+hr.linea-division{
+    border-width: 2px;
+    border-color:lightblue;
+}
+
+span.texto-inferior{
+    font-size: 0.99em;
+}
+
+footer{
+    border-top: 1px solid darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgray;
+}
+
+
+/* ============ ESTILOS PARA LA PÁGINA DE CONTACTO ============ */
+
+main.mensaje{
+    background-color: lightgray;
+    padding: 20px;
+    margin-bottom: 100px !important;
+}
+
+textarea#mensaje{
+    resize: none;
+}
+
+img.imagen-carta{
+    width: 300px;
+}
+
+/*Spinner Personalizado*/
+div.spinner-personalizado{
+    display: inline-block;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: darkcyan;
+    width: 30px;
+    height: 30px;
+    animation-name: girar;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes girar {
+    from{ transform: rotate(0deg); }
+    to{ transform: rotate(360deg); }
+}
+
+span.texto-enviando{
+    position: relative;
+    top: -7px;
+}
+
+
+/* ============ ESTILOS PARA LA PÁGINA CURRICULUM ============ */
+a.enlaces-github{
+    font-size: 1em;
+}
+a.enlaces-github:hover{
+    color: cadetblue !important;
+}
+
+h4.titulo-proyectos{
+    font-size: 1.1em;
+}
+
+h5.titulo-cards{
+    font-size: 1em;
+}
+
+div.card-transicion{
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.8s;
+}
+div.card-transicion:hover{
+    transform: scale(110%);
+    box-shadow: 0px 0px 5px 2px darkgray;
+}
